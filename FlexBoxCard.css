@@ -1,0 +1,342 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+/*HEADER*/
+nav {
+    display: flex;
+    align-items: center; /* Center vertically */
+    width: 100%;
+    height: 50px;
+    padding: 5px 100px 5px 100px;
+    background-color: #FFCF32;
+}
+
+nav .logo{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+nav ul {
+    margin-left: auto; /* Move the ul to the right */
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: #260101;;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+
+
+nav li a:hover{
+    color: white;
+    transition: all 0.4s ease 0s;
+}
+
+/*LANDING PAGE*/ 
+
+.landing{
+    display: flex;
+    width: 100%;
+    height: 590px;
+    flex-wrap:wrap; 
+    background-color: #977DC7;  
+    padding-top: 100px;     
+}
+
+.content{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    line-height: 1.4;
+    padding-left: 80px;
+
+     
+}
+
+#content{
+    display: block;
+    color: #F2F2F2;
+    flex-grow: 2; /*box screen according small hota jayega but flex-wrap use nh krna */
+    
+}
+
+#heading{
+    color: white;
+    line-height: 1.3;
+    margin-top: 30px;
+    font-size: 4vw;
+}
+#wellness{
+    color: #FFC228;
+}
+#paragraph{
+
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+#pic{
+   margin-top: 150px;
+   margin-right: 20px;
+    flex-grow: 2;
+    
+}
+
+/*MINI BOXES*/ 
+.benifits{
+    text-align: center;
+    margin-top: 50px;
+    color: #011C26;
+}
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: auto; /* Set height to auto to allow flexibility */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 50px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+}
+
+.flex-item {
+    width: calc(33.3333% - 20px); /* Set the width for each box */
+    height: 80px; /* Adjust height as needed */
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #594B6E;
+    font-weight: bold;
+    border-radius: 15px; /* Adjust border radius as needed */
+    background-color: #F8F2FD;
+    flex-grow: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px 0px;
+}
+#text {
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 450; /* Adjust font weight as needed */
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container2{
+    display: flex;
+    width: 100%;
+    height: auto; /* Set height to auto to allow flexibility */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 150px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+}
+
+/*HOVER CARDS*/
+.card-body{
+   
+   padding-top: 40px;
+    background-color:#977DC7 ;
+    padding-bottom: 40px;
+}
+
+.card-body h1{
+    color: #F2F2F2;;
+     text-align: center;
+     margin-bottom: 30px;
+     font-size: 40px;
+
+}
+.card-container{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 350px;
+    height: 480px;
+    margin: 20px;
+    border-radius: 5px;
+}  
+
+.card-img{
+ 
+    background-size: cover;
+    width: 335px;
+    height: 220px;
+    margin: 7px;
+}
+
+.card h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+.card p{
+     padding: 10px;
+     margin: 0 10px;
+     text-align: center;
+     color: #444443;
+     font-size: 14.5px;
+     line-height: 1.5;
+}
+
+.card a{
+    background-color: #F1F4F3;
+    color: #F2AC29;
+    padding: 9px;
+    display: block ;
+    text-align: center;
+    margin: 12px 100px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card:hover{
+   
+    transform: scale(1.03);
+    transition: all ease;
+}
+
+.card a:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    background-color: #FFD979;
+    color: white;
+}
+
+/*** 2 PARTS ***/
+.part3{
+    padding: 50px 0 330px 0;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-wrap:wrap;     
+    margin-top: 215px;
+
+}
+
+.part3A{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    line-height: 1.4;    
+}
+
+
+#partA{
+    
+    flex-grow:2;
+}
+
+#partA img{ 
+    border-radius: 225px 225px 10px 10px;
+}
+
+#partB{
+    display: block;
+    color: black;
+    text-align: center;
+    flex-grow: 2; /*box screen according small hota jayega but flex-wrap use nh krna */
+    margin: -80px 50px 0 0; 
+    flex-wrap: wrap;
+
+}
+
+#t{
+    color: black;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.7;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#partB h3{
+    color: #011C26;
+}
+
+/*** Gallery ***/
+.container1{
+    background-color: #977DC7;
+    padding: 40px 50px 0px 50px;
+    padding-bottom: 100px;
+}
+
+.container1 .heading1{
+    text-align: center;
+    padding: 30px 0px 40px 0px;
+    color:#F2F2F2;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.container1 .box-container1{
+
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+   gap:5px;
+    
+}
+
+.container1 .box-container1 .box1{
+
+    text-align: center;
+    padding:25px 20px 0px 20px;
+
+}
+.container1 .box-container1 .box1 img{
+    border: 5px solid #F2F2F2;
+    border-radius :5px;
+  
+}
+
+.box1 h2{
+    color:#F2F2F2 ;
+    margin-top: 10px;
+}
+
+/* FOOTER*/
+.footer{
+    width: 100%;
+    height: 40px;
+    background-color: #162D59;
+}
+
+
+
+
+
+
